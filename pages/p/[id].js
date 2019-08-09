@@ -5,11 +5,19 @@ import fetch from 'isomorphic-unfetch'
 const Post = props => {
   return (
     <Layout>
-      <h1>{props.show.name}</h1>
-      <p>{props.show.summary.replace(/<[/]?p>/g,'')}</p>
-      <img src={props.show.image.medium} />
+      <Movie name={props.show.name} summary={props.show.summary} image={props.show.image && props.show.image.medium} />
     </Layout>
   );
+}
+
+const Movie = ({name, summary, image}) => {
+  return (
+    <>
+      <h1>{name || "NOT FOUND"}</h1>
+      <p>{summary && summary.replace(/<[/]?p>/g,'')}</p>
+      <img src={image} />
+    </>
+  )
 }
 
 

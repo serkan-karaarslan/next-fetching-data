@@ -10064,23 +10064,39 @@ var Post = function Post(props) {
       lineNumber: 7
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Movie, {
+    name: props.show.name,
+    summary: props.show.summary,
+    image: props.show.image && props.show.image.medium,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, props.show.name), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
+  }));
+};
+
+var Movie = function Movie(_ref) {
+  var name = _ref.name,
+      summary = _ref.summary,
+      image = _ref.image;
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 16
     },
     __self: this
-  }, props.show.summary.replace(/<[/]?p>/g, '')), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
-    src: props.show.image.medium,
+  }, name || "NOT FOUND"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 17
+    },
+    __self: this
+  }, summary && summary.replace(/<[/]?p>/g, '')), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("img", {
+    src: image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
     },
     __self: this
   }));
@@ -10089,7 +10105,7 @@ var Post = function Post(props) {
 Post.getInitialProps =
 /*#__PURE__*/
 function () {
-  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
   /*#__PURE__*/
   _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
     var id, res, show;
@@ -10122,7 +10138,7 @@ function () {
   }));
 
   return function (_x) {
-    return _ref.apply(this, arguments);
+    return _ref2.apply(this, arguments);
   };
 }();
 
@@ -10130,7 +10146,7 @@ function () {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fp%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fserkankaraarslan%2FDocuments%2Ffitforme-code%2Fnext-learn-demo%2F6-fetching-data%2Fpages%2Fp%2F%5Bid%5D.js ***!
   \**************************************************************************************************************************************************************************************************/
@@ -10153,5 +10169,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

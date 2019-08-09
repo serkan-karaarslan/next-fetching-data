@@ -10070,7 +10070,7 @@ var Index = function Index(props) {
       lineNumber: 8
     },
     __self: this
-  }, "Batman TV Shows"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
+  }, "The List of Batman TV Shows"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
@@ -10140,7 +10140,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*******************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fserkankaraarslan%2FDocuments%2Ffitforme-code%2Fnext-learn-demo%2F6-fetching-data%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************************************************************/
@@ -10163,5 +10163,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

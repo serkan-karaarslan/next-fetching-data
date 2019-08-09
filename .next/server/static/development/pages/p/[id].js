@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -886,23 +886,40 @@ const Post = props => {
       lineNumber: 7
     },
     __self: undefined
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Movie, {
+    name: props.show.name,
+    summary: props.show.summary,
+    image: props.show.image && props.show.image.medium,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: undefined
-  }, props.show.name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }));
+};
+
+const Movie = ({
+  name,
+  summary,
+  image
+}) => {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 16
     },
     __self: undefined
-  }, props.show.summary.replace(/<[/]?p>/g, '')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: props.show.image.medium,
+  }, name || "NOT FOUND"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 17
+    },
+    __self: undefined
+  }, summary && summary.replace(/<[/]?p>/g, '')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
     },
     __self: undefined
   }));
@@ -924,7 +941,7 @@ Post.getInitialProps = async function (context) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/p/[id].js ***!
   \*******************************/
