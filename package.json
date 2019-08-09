@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy" : "npm run build && next export",
+    "netlify" : "npm run build && next export",
     "serve" : "serve ./out"
   },
   "keywords": [],
